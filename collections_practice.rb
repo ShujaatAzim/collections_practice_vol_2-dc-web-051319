@@ -1,6 +1,6 @@
 def begins_with_r(array)
 r_words = []
-  array.each do |word|
+  array.collect do |word|
     if word[0] == "r"
       r_words << word
     end
