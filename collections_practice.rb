@@ -18,7 +18,9 @@ def contain_a(array)
 end
 
 def first_wa(array)
-
+  array.find do |word|
+    return word.start_with?("wa")
+  end
 end
 
 def remove_non_strings(array)
