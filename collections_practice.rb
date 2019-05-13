@@ -1,15 +1,10 @@
 def begins_with_r(array)
-r_words = []
-  array.collect do |word|
-    if word[0] == "r"
-      r_words << word
-    end
-    if r_words.length == array.length
-      return true
-    else
+  array.each do |word|
+    if word[0] != "r"
       return false
     end
   end
+  true
 end
 
 def contain_a(array)
