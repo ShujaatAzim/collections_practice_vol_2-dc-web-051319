@@ -60,15 +60,15 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
-  by_location = {}
+  locations = {}
     schools.each do |school, location_hash|
       location_hash.each do |symbol, location|
-        if by_location[location] == nil
-          by_location[location] = [school]
+        if locations[location] == nil
+          locations[location] = [school]
         else
-          by_location[location] << school
+          locations[location] << school
         end
       end
     end
-    by_location
+    locations
 end
