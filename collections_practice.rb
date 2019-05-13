@@ -8,10 +8,13 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  array.collect do |word|
+  a_words = []
+  array.each do |word|
     if word.include?("a")
+      a_words << word
     end
   end
+  return a_words
 end
 
 def first_wa(array)
