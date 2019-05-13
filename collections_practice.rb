@@ -46,7 +46,11 @@ end
 
 
 def merge_data(enumerable1, enumerable2)
-
+  keys.each do |name_hash|
+    data.each do |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+    end
+  end
 end
 
 def find_cool(array)
