@@ -50,7 +50,9 @@ def merge_data(enumerable1, enumerable2)
 end
 
 def find_cool(hash)
-
+  array.select do |entry|
+    entry if entry.has_value?("cool")
+  end
 end
 
 def organize_schools(hash_of_schools)
