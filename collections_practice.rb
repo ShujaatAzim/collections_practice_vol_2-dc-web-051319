@@ -51,7 +51,7 @@ end
 
 def find_cool(array)
   array.select do |entry|
-    if entry.has_value?("cool")
+    entry if entry.has_value?("cool")
   end
 end
 
