@@ -3,7 +3,6 @@ r_words = []
   array.each do |word|
     if word[0] == "r"
       r_words << word
-      binding.pry
     end
     if r_words.length == array.length
       return true
