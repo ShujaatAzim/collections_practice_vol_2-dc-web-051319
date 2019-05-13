@@ -49,7 +49,7 @@ def merge_data(enumerable1, enumerable2)
 
 end
 
-def find_cool(hash)
+def find_cool(array)
   array.select do |entry|
     entry if entry.has_value?("cool")
   end
