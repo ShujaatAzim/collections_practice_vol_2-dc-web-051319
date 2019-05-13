@@ -27,7 +27,7 @@ end
 
 def remove_non_strings(array)
   array.delete_if do |obj|
-    obj.is_a? String
+    !(obj.is_a? String)
   end
   array
 end
