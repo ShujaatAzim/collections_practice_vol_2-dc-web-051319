@@ -7,6 +7,7 @@ def begins_with_r(array)
   true
 end
 
+
 def contain_a(array)
   a_words = []
   array.each do |word|
@@ -17,6 +18,7 @@ def contain_a(array)
   return a_words
 end
 
+
 def first_wa(array)
   array.find do |word|
     word.match("wa")
@@ -24,7 +26,9 @@ def first_wa(array)
 end
 
 def remove_non_strings(array)
-
+  array.delete_if do |obj|
+    obj.is_a? String
+  end
 end
 
 def count_elements(array)
