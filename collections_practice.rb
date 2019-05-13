@@ -29,6 +29,7 @@ def remove_non_strings(array)
   array.delete_if do |obj|
     obj.is_a? String
   end
+  array
 end
 
 def count_elements(array)
